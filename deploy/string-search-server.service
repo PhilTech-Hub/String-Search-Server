@@ -1,0 +1,39 @@
+[Unit]
+Description=String Search Server
+After=network.target
+Wants=network.target
+Documentation=https://github.com/your-repo/string_search_server
+
+[Service]
+Type=simple
+User=stringserver
+Group=stringserver
+WorkingDirectory=/opt/string_search_server
+ExecStart=/usr/bin/python3 -m server.server
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=string-search-server
+
+# Security settings
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/opt/string_search_server/data /opt/string_search_server/logs /opt/string_search_server/config
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+
+# Resource limits
+LimitNOFILE=65536
+MemoryLimit=512M
+
+# Environment
+Environment=PYTHONPATH=/opt/string_search_server
+
+[Install]
+WantedBy=multi-user.target
+Alias=string-search.service

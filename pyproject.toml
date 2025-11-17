@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "string_search_server"
+version = "0.1.0"
+description = "String Search Server and Client"
+
+[tool.setuptools]
+packages = ["client", "server"]
+
+[tool.setuptools.package-dir]
+client = "client"
+server = "server"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.coverage.run]
+source = ["server", "client"]
+omit = [
+    "*/tests/*",
+    "*/test_*",
+    "data/*",
+    "logs/*",
+    "reports/*",
+    "coverage_html/*",
+    "coverage_detailed/*"
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\b:",
+    "except:",
+]

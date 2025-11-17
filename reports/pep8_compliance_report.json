@@ -1,0 +1,328 @@
+{
+  "timestamp": "2025-11-04T04:15:20.372256",
+  "summary": {
+    "total_files": 25,
+    "total_issues": 91,
+    "files_with_issues": 21,
+    "total_long_lines": 9,
+    "average_compliance_score": 83.44544922839039,
+    "compliance_percentage": 16.0
+  },
+  "files": {
+    "create_zip.py": {
+      "line_count": 42,
+      "long_lines": [],
+      "issues": [
+        "create_zip.py:5:1: E302 expected 2 blank lines, found 1",
+        "create_zip.py:41:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 80.0
+    },
+    "test_error_messages.py": {
+      "line_count": 115,
+      "long_lines": [],
+      "issues": [
+        "test_error_messages.py:11:1: E302 expected 2 blank lines, found 1",
+        "test_error_messages.py:114:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 81.81818181818181
+    },
+    "__init__.py": {
+      "line_count": 0,
+      "long_lines": [],
+      "issues": [],
+      "compliance_score": 100
+    },
+    "client/client.py": {
+      "line_count": 207,
+      "long_lines": [
+        {
+          "line_number": 62,
+          "length": 101,
+          "preview": "f\"[Client] Establishing se"
+        }
+      ],
+      "issues": [
+        "client/client.py:6:1: E302 expected 2 blank lines, found 1",
+        "client/client.py:62:101: E501 line too long (101 > 100 characters)",
+        "client/client.py:183:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 85.0
+    },
+    "client/__init__.py": {
+      "line_count": 8,
+      "long_lines": [],
+      "issues": [],
+      "compliance_score": 100
+    },
+    "scripts/fix_common_pep8_issues.py": {
+      "line_count": 174,
+      "long_lines": [],
+      "issues": [
+        "scripts/fix_common_pep8_issues.py:11:1: E302 expected 2 blank lines, found 1",
+        "scripts/fix_common_pep8_issues.py:163:1: E302 expected 2 blank lines, found 1",
+        "scripts/fix_common_pep8_issues.py:173:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 82.35294117647058
+    },
+    "scripts/generate_pep8_report.py": {
+      "line_count": 165,
+      "long_lines": [],
+      "issues": [
+        "scripts/generate_pep8_report.py:12:1: E302 expected 2 blank lines, found 1",
+        "scripts/generate_pep8_report.py:59:1: E302 expected 2 blank lines, found 1",
+        "scripts/generate_pep8_report.py:104:1: E302 expected 2 blank lines, found 1",
+        "scripts/generate_pep8_report.py:134:1: E302 expected 2 blank lines, found 1",
+        "scripts/generate_pep8_report.py:162:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 68.75
+    },
+    "scripts/generate_performance_report.py": {
+      "line_count": 44,
+      "long_lines": [],
+      "issues": [
+        "scripts/generate_performance_report.py:10:1: E302 expected 2 blank lines, found 1",
+        "scripts/generate_performance_report.py:42:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 80.0
+    },
+    "scripts/verify_pep8_compliance.py": {
+      "line_count": 287,
+      "long_lines": [],
+      "issues": [
+        "scripts/verify_pep8_compliance.py:12:1: E302 expected 2 blank lines, found 1",
+        "scripts/verify_pep8_compliance.py:257:1: E302 expected 2 blank lines, found 1",
+        "scripts/verify_pep8_compliance.py:286:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 89.28571428571429
+    },
+    "server/config.py": {
+      "line_count": 184,
+      "long_lines": [
+        {
+          "line_number": 118,
+          "length": 103,
+          "preview": "f\"Line {line_n"
+        },
+        {
+          "line_number": 175,
+          "length": 121,
+          "preview": "f\"CERTFILE={self.certfile}, KEYFILE={s"
+        }
+      ],
+      "issues": [
+        "server/config.py:25:1: E302 expected 2 blank lines, found 1",
+        "server/config.py:118:101: E501 line too long (103 > 100 characters)",
+        "server/config.py:118:101: E501 line too long (103 > 100 characters)",
+        "server/config.py:175:101: E501 line too long (121 > 100 characters)",
+        "server/config.py:179:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 72.22222222222223
+    },
+    "server/server.py": {
+      "line_count": 400,
+      "long_lines": [],
+      "issues": [
+        "server/server.py:43:1: E302 expected 2 blank lines, found 1",
+        "server/server.py:203:58: E203 whitespace before ':'",
+        "server/server.py:206:53: E203 whitespace before ':'",
+        "server/server.py:215:58: E203 whitespace before ':'",
+        "server/server.py:218:53: E203 whitespace before ':'",
+        "server/server.py:384:1: E302 expected 2 blank lines, found 1",
+        "server/server.py:398:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 82.5
+    },
+    "server/ssl_utils.py": {
+      "line_count": 129,
+      "long_lines": [
+        {
+          "line_number": 47,
+          "length": 116,
+          "preview": "error_msg = \"SSL configuration error: Must"
+        }
+      ],
+      "issues": [
+        "server/ssl_utils.py:17:1: E302 expected 2 blank lines, found 1",
+        "server/ssl_utils.py:47:101: E501 line too long (116 > 100 characters)",
+        "server/ssl_utils.py:123:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 75.0
+    },
+    "server/__init__.py": {
+      "line_count": 10,
+      "long_lines": [],
+      "issues": [],
+      "compliance_score": 100
+    },
+    "tests/benchmark_search_algorithms.py": {
+      "line_count": 914,
+      "long_lines": [
+        {
+          "line_number": 507,
+          "length": 108,
+          "preview": "f\"                Requirement: {requir"
+        },
+        {
+          "line_number": 564,
+          "length": 108,
+          "preview": "f\"                Requirement: {requir"
+        }
+      ],
+      "issues": [
+        "tests/benchmark_search_algorithms.py:70:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:128:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:132:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:158:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:176:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:189:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:200:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:203:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:206:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:209:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:212:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:216:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:220:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:239:55: E203 whitespace before ':'",
+        "tests/benchmark_search_algorithms.py:257:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:269:1: E305 expected 2 blank lines after class or function definition, found 1",
+        "tests/benchmark_search_algorithms.py:271:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:353:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:439:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:507:101: E501 line too long (108 > 100 characters)",
+        "tests/benchmark_search_algorithms.py:564:101: E501 line too long (108 > 100 characters)",
+        "tests/benchmark_search_algorithms.py:573:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:644:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:825:1: E302 expected 2 blank lines, found 1",
+        "tests/benchmark_search_algorithms.py:913:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 72.52747252747253
+    },
+    "tests/conftest.py": {
+      "line_count": 16,
+      "long_lines": [],
+      "issues": [
+        "tests/conftest.py:4:1: E302 expected 2 blank lines, found 1"
+      ],
+      "compliance_score": 90.0
+    },
+    "tests/pytest.py": {
+      "line_count": 259,
+      "long_lines": [],
+      "issues": [
+        "tests/pytest.py:24:1: E302 expected 2 blank lines, found 1",
+        "tests/pytest.py:33:1: E302 expected 2 blank lines, found 1",
+        "tests/pytest.py:39:1: E302 expected 2 blank lines, found 1",
+        "tests/pytest.py:57:1: E302 expected 2 blank lines, found 1",
+        "tests/pytest.py:77:1: E302 expected 2 blank lines, found 1",
+        "tests/pytest.py:93:1: E302 expected 2 blank lines, found 1",
+        "tests/pytest.py:111:1: E302 expected 2 blank lines, found 1",
+        "tests/pytest.py:140:1: E302 expected 2 blank lines, found 1",
+        "tests/pytest.py:174:1: E302 expected 2 blank lines, found 1",
+        "tests/pytest.py:218:1: E302 expected 2 blank lines, found 1"
+      ],
+      "compliance_score": 60.0
+    },
+    "tests/test_client.py": {
+      "line_count": 149,
+      "long_lines": [],
+      "issues": [
+        "tests/test_client.py:5:1: E302 expected 2 blank lines, found 1",
+        "tests/test_client.py:148:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 85.71428571428572
+    },
+    "tests/test_client_fixed.py": {
+      "line_count": 138,
+      "long_lines": [],
+      "issues": [
+        "tests/test_client_fixed.py:5:1: E302 expected 2 blank lines, found 1",
+        "tests/test_client_fixed.py:137:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 84.61538461538461
+    },
+    "tests/test_edge_cases.py": {
+      "line_count": 250,
+      "long_lines": [],
+      "issues": [
+        "tests/test_edge_cases.py:9:1: E302 expected 2 blank lines, found 1",
+        "tests/test_edge_cases.py:204:1: E302 expected 2 blank lines, found 1",
+        "tests/test_edge_cases.py:249:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 88.0
+    },
+    "tests/test_logging_verification.py": {
+      "line_count": 379,
+      "long_lines": [
+        {
+          "line_number": 86,
+          "length": 106,
+          "preview": "# For now, let's be mo"
+        },
+        {
+          "line_number": 87,
+          "length": 107,
+          "preview": "# that's a success. We"
+        }
+      ],
+      "issues": [
+        "tests/test_logging_verification.py:12:1: E302 expected 2 blank lines, found 1",
+        "tests/test_logging_verification.py:86:101: E501 line too long (106 > 100 characters)",
+        "tests/test_logging_verification.py:87:101: E501 line too long (107 > 100 characters)",
+        "tests/test_logging_verification.py:378:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 89.1891891891892
+    },
+    "tests/test_reread_true.py": {
+      "line_count": 117,
+      "long_lines": [
+        {
+          "line_number": 110,
+          "length": 113,
+          "preview": "'\u2705 ALL ALGORITHMS MEET 40ms REQUIREMEN"
+        }
+      ],
+      "issues": [
+        "tests/test_reread_true.py:15:1: E302 expected 2 blank lines, found 1",
+        "tests/test_reread_true.py:110:101: E501 line too long (113 > 100 characters)",
+        "tests/test_reread_true.py:115:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 72.72727272727273
+    },
+    "tests/test_server.py": {
+      "line_count": 113,
+      "long_lines": [],
+      "issues": [
+        "tests/test_server.py:9:1: E302 expected 2 blank lines, found 1",
+        "tests/test_server.py:112:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 81.81818181818181
+    },
+    "tests/test_server_fixed.py": {
+      "line_count": 80,
+      "long_lines": [],
+      "issues": [
+        "tests/test_server_fixed.py:9:1: E302 expected 2 blank lines, found 1",
+        "tests/test_server_fixed.py:79:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 80.0
+    },
+    "tests/validate_performance.py": {
+      "line_count": 133,
+      "long_lines": [],
+      "issues": [
+        "tests/validate_performance.py:15:1: E302 expected 2 blank lines, found 1",
+        "tests/validate_performance.py:131:1: E305 expected 2 blank lines after class or function definition, found 1"
+      ],
+      "compliance_score": 84.61538461538461
+    },
+    "tests/__init__.py": {
+      "line_count": 5,
+      "long_lines": [],
+      "issues": [],
+      "compliance_score": 100
+    }
+  },
+  "common_issues": {},
+  "recommendations": []
+}

@@ -1,0 +1,41 @@
+nohup: ignoring input
+INFO:root:[SSL] Certificate-based SSL context created for server.
+WARNING:root:[SSL] PSK authentication initialized (simulated, not enforced by Python ssl). Key prefix: supe***
+INFO:root:[SSL] SSL context setup complete (TLS ≥1.2, strong ciphers enabled).
+INFO:__main__:Server listening on 127.0.0.1:44445 (SSL: True)
+INFO:__main__:Client ('127.0.0.1', 55320) connected
+INFO:__main__:Server socket closed.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/engphil/string_search_server/server/server.py", line 290, in <module>
+    run_daemon(str(CONFIG_PATH))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/engphil/string_search_server/server/server.py", line 285, in run_daemon
+    server.start()
+    ~~~~~~~~~~~~^^
+  File "/home/engphil/string_search_server/server/server.py", line 253, in start
+    client_socket, address = self.server_socket.accept()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/engphil/miniconda3/lib/python3.13/ssl.py", line 1418, in accept
+    newsock = self.context.wrap_socket(newsock,
+                do_handshake_on_connect=self.do_handshake_on_connect,
+                suppress_ragged_eofs=self.suppress_ragged_eofs,
+                server_side=True)
+  File "/home/engphil/miniconda3/lib/python3.13/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/engphil/miniconda3/lib/python3.13/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/engphil/miniconda3/lib/python3.13/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)

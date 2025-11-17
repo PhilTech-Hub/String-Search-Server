@@ -1,0 +1,62 @@
+astroid==4.0.1
+asyncio==4.0.0
+black==25.9.0
+Bottleneck @ file:///home/task_176193794916414/conda-bld/bottleneck_1761937997056/work
+certifi==2025.10.5
+charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1760437218288/work
+click==8.3.0
+codespell==2.4.1
+contourpy @ file:///croot/contourpy_1732540045555/work
+coverage==7.11.0
+cycler @ file:///home/conda/feedstock_root/build_artifacts/cycler_1733332471406/work
+dill==0.4.0
+fonttools @ file:///home/conda/feedstock_root/build_artifacts/fonttools_1759187069296/work
+h11==0.16.0
+idna==3.11
+iniconfig==2.3.0
+isort==7.0.0
+Jinja2==3.1.6
+kiwisolver @ file:///croot/kiwisolver_1737039087198/work
+MarkupSafe==3.0.3
+matplotlib==3.10.6
+matplotlib-stubs==0.3.11
+mccabe==0.7.0
+munkres==1.1.4
+mypy==1.18.2
+mypy_extensions==1.1.0
+numexpr @ file:///croot/numexpr_1755766469354/work
+numpy @ file:///home/task_176191363297444/conda-bld/numpy_and_numpy_base_1761914495206/work/dist/numpy-2.3.4-cp312-cp312-linux_x86_64.whl#sha256=cc444d9b2108b5ffa488d41896f761352c3c120280ba1a43f3c073262561e7de
+packaging @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_packaging_1745345660/work
+pandas @ file:///home/task_175982152705186/conda-bld/pandas_1759822246405/work/dist/pandas-2.3.3-cp312-cp312-linux_x86_64.whl#sha256=594352c90592c883f6b80a8c3ab4eb2438ac1feda05bb5540854c0f37cb31267
+pandas-stubs==2.3.2.250926
+pathspec==0.12.1
+pillow @ file:///croot/pillow_1752524526621/work
+platformdirs==4.5.0
+pluggy==1.6.0
+Pygments==2.19.2
+pylint==4.0.2
+pyparsing @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pyparsing_1758436411/work
+PyQt6==6.9.1
+PyQt6_sip @ file:///home/task_175751008914507/conda-bld/pyqt-split_1757511022708/work/pyqt_sip
+pytest==8.4.2
+pytest-cov==7.0.0
+pytest-html==4.1.1
+pytest-metadata==3.1.1
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dateutil_1751104122/work
+pytokens==0.2.0
+pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1742920838005/work
+reportlab @ file:///croot/reportlab_1755608115902/work
+requests==2.32.5
+setuptools==80.9.0
+sip @ file:///croot/sip_1756223371714/work
+six @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_six_1753199211/work
+tomlkit==0.13.3
+tornado @ file:///croot/tornado_1748956929273/work
+types-pytz==2025.2.0.20250809
+types-reportlab==4.4.4.20250926
+typing_extensions==4.15.0
+tzdata @ file:///home/conda/feedstock_root/build_artifacts/python-tzdata_1742745135198/work
+unicodedata2 @ file:///home/task_176175150050642/conda-bld/unicodedata2_1761751513312/work
+urllib3==2.5.0
+uvicorn==0.38.0
+wheel==0.45.1
